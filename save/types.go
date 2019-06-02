@@ -353,6 +353,14 @@ func (wrapper *EntityType) UnmarshalJSON(b []byte) error {
 		case "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk5/Build_ConveyorBeltMk5.Build_ConveyorBeltMk5_C":
 			fallthrough
 		case "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk6/Build_ConveyorBeltMk6.Build_ConveyorBeltMk6_C":
+			fallthrough
+		case "/Game/FactoryGame/Buildable/Factory/ConveyorLiftMk1/Build_ConveyorLiftMk1.Build_ConveyorLiftMk1_C":
+			fallthrough
+		case "/Game/FactoryGame/Buildable/Factory/ConveyorLiftMk2/Build_ConveyorLiftMk2.Build_ConveyorLiftMk2_C":
+			fallthrough
+		case "/Game/FactoryGame/Buildable/Factory/ConveyorLiftMk3/Build_ConveyorLiftMk3.Build_ConveyorLiftMk3_C":
+			fallthrough
+		case "/Game/FactoryGame/Buildable/Factory/ConveyorLiftMk4/Build_ConveyorLiftMk4.Build_ConveyorLiftMk4_C":
 			data := BP_Belt{}
 			err = jsoniter.Unmarshal(temp["extra_objects"], &data)
 			wrapper.ExtraObjects = data
